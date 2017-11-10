@@ -1,0 +1,3 @@
+[submodule "njse"]
+	path = njse
+	url = https://github.com/NQShabazz/njse
