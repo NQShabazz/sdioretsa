@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Game Engine</title>
+
+    <style>
+      *{padding: 0; margin: 0; font-family: Arial, sans-serif; user-select: none;}
+
+      #canvasContainer{width: 800px; height: 600px; margin: auto; margin-top: 50px; position: relative; background: #444;}
+      #canvasContainer > *{position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: crosshair;}
+
+      #elementContainer{z-index: 100;}
+      #elementContainer #fpsDisplay{text-align: right; padding: 10px; color: #fff;}
+    </style>
+
+    <script src="njse/input.js"></script>
+
+    <script src="njse/renderer.js"></script>
+
+    <script src="njse/components/nJSE-component.js"></script>
+    <script src="njse/components/nJSE-component-basics.js"></script>
+    <script src="njse/components/nJSE-component-transform.js"></script>
+    <script src="njse/components/nJSE-component-sprite.js"></script>
+    <script src="njse/components/nJSE-component-audio.js"></script>
+    <script src="njse/components/nJSE-component-collider.js"></script>
+    <script src="njse/components/entities/nJSE-component-defaultEntity.js"></script>
+
+    <script src="njse/main.js"></script>
+  </head>
+  <body>
+    <div id="canvasContainer">
+      <div id="elementContainer"></div>
+    </div>
+  </body>
+</html>
